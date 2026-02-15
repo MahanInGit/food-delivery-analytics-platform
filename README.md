@@ -39,14 +39,14 @@ Python Data Generator
 
 ### Warehouse Structure
 
-![Warehouse](/Users/mahanabasiyan/Desktop/Projects/food-delivery-analytics-platform/docs/architecture_bigquery.png)
+![Warehouse](docs/architecture_bigquery.png)
 
 ### Business Metrics Output
 
-![Delivery Time](/Users/mahanabasiyan/Desktop/Projects/food-delivery-analytics-platform/docs/analytics_result.png)
+![Delivery Time](docs/analytics_result.png)
 
 ### Data Quality Tests (dbt)
 
 All 52 tests passed — ensuring reliability and correctness of the data pipeline.
 
-![dbt tests](/Users/mahanabasiyan/Desktop/Projects/food-delivery-analytics-platform/docs/dbt_tests.png)
+![dbt tests](docs/dbt_tests.png)
