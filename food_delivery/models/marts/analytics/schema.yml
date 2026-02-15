@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: agg_orders_daily
+    description: "Daily aggregated order metrics by city."
+    columns:
+      - name: order_date
+        tests:
+          - not_null
+
+      - name: city
+        tests:
+          - not_null
+
+      - name: total_orders
+        tests:
+          - not_null
+
+      - name: total_revenue
+        tests:
+          - not_null
+

@@ -1,0 +1,117 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Staging model for raw orders. Standardizes types, naming, and basic cleaning."
+    columns:
+      - name: order_id
+        description: "Unique order identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: "Customer placing the order."
+        tests:
+          - not_null
+
+      - name: restaurant_id
+        description: "Restaurant fulfilling the order."
+        tests:
+          - not_null
+
+      - name: courier_id
+        description: "Courier assigned to deliver the order."
+        tests:
+          - not_null
+
+      - name: status
+        description: "Order lifecycle status."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['delivered', 'cancelled', 'created']
+
+      - name: payment_method
+        description: "Payment method (online only)."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['ideal', 'card']
+
+      - name: order_created_at
+        description: "Timestamp when the order was created."
+        tests:
+          - not_null
+
+  - name: stg_customers
+    description: "Staging model for raw customers."
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: platform
+        description: "Customer platform (ios/android/web)."
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['ios', 'android', 'web']
+
+  - name: stg_restaurants
+    description: "Staging model for raw restaurants."
+    columns:
+      - name: restaurant_id
+        description: "Unique restaurant identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: cuisine_type
+        description: "Restaurant cuisine type."
+        tests:
+          - not_null
+
+  - name: stg_couriers
+    description: "Staging model for raw couriers."
+    columns:
+      - name: courier_id
+        description: "Unique courier identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: vehicle_type
+        description: "Courier vehicle type (bike/scooter/car)."
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['bike', 'scooter', 'car']
+
+  - name: stg_order_items
+    description: "Staging model for raw order items."
+    columns:
+      - name: order_id
+        description: "Order identifier."
+        tests:
+          - not_null
+
+      - name: item_id
+        description: "Item identifier (unique within an order)."
+        tests:
+          - not_null
+
+      - name: quantity
+        description: "Quantity ordered."
+        tests:
+          - not_null
+
+      - name: unit_price
+        description: "Unit price for the item."
+        tests:
+          - not_null
+

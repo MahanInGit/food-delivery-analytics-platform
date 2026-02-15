@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Core fact table for orders with delivery lifecycle timestamps and derived metrics."
+    columns:
+      - name: order_id
+        description: "Unique order identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - not_null
+
+      - name: restaurant_id
+        tests:
+          - not_null
+
+      - name: courier_id
+        tests:
+          - not_null
+
+      - name: status
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['delivered', 'cancelled', 'created']
+
+      - name: payment_method
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['ideal', 'card']
+
+
+
+
+
+
+  - name: dim_customers
+    description: "Customer dimension table."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+
+
+  - name: dim_restaurants
+    description: "Restaurant dimension table."
+    columns:
+      - name: restaurant_id
+        tests:
+          - not_null
+          - unique
+
+
+
+  - name: dim_couriers
+    description: "Courier dimension table."
+    columns:
+      - name: courier_id
+        tests:
+          - not_null
+          - unique
+

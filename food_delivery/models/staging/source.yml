@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw_food_delivery
+    database: project-fed91f67-d3c8-4c0d-9e6
+    schema: raw_food_delivery
+    tables:
+      - name: raw_customers
+      - name: raw_restaurants
+      - name: raw_couriers
+      - name: raw_orders
+      - name: raw_order_items
+
