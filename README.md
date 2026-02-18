@@ -33,13 +33,13 @@ Python Data Generator
         |
         v
    Looker Dashboards
-
+```
 
 ## Data Pipeline Validation
 
 ### Warehouse Structure
 
-![Warehouse](/Users/mahanabasiyan/Desktop/Projects/food-delivery-analytics-platform/docs/architecture_bigquery.png)
+![Warehouse](docs/architecture_bigquery.png)
 
 ### Business Metrics Output
 
@@ -49,4 +49,4 @@ Python Data Generator
 
 All 52 tests passed — ensuring reliability and correctness of the data pipeline.
 
-![dbt tests](docs/https://github.com/MahanInGit/food-delivery-analytics-platform/blob/main/docs/dbt_tests.png#:~:text=dbt_tests.png)
+![dbt tests](docs/dbt_tests.png)
