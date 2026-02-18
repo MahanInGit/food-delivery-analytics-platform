@@ -39,7 +39,7 @@ Python Data Generator
 
 ### Warehouse Structure
 
-![Warehouse](docs/architecture_bigquery.png)
+![Warehouse](/Users/mahanabasiyan/Desktop/Projects/food-delivery-analytics-platform/docs/architecture_bigquery.png)
 
 ### Business Metrics Output
 
