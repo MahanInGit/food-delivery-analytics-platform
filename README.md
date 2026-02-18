@@ -49,4 +49,4 @@ Python Data Generator
 
 All 52 tests passed — ensuring reliability and correctness of the data pipeline.
 
-![dbt tests](docs/dbt_tests.png)
+![dbt tests](docs/https://github.com/MahanInGit/food-delivery-analytics-platform/blob/main/docs/dbt_tests.png#:~:text=dbt_tests.png)
