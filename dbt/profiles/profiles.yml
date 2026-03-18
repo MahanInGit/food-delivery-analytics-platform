@@ -1,0 +1,11 @@
+food_delivery:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: project-fed91f67-d3c8-4c0d-9e6
+      dataset: analytics_dev
+      location: EU
+      keyfile: /opt/airflow/service_account.json
+      threads: 4

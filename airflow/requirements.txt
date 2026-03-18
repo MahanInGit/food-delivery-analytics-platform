@@ -1,0 +1,7 @@
+dbt-bigquery==1.11.0
+google-cloud-bigquery
+pandas
+numpy
+faker
+pyarrow
+
