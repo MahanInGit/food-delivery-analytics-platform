@@ -180,7 +180,7 @@ This ensures the pipeline is reliable and production-ready.
 ### BigQuery Warehouse Structure
 
 <p align="center">
-  <img src="docs/architecture_bigquery.png" width="250">
+  <img src="docs/architecture_bigquery.png" width="150">
 </p>
 ### Aggregated Analytics table
 
