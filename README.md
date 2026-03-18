@@ -33,6 +33,8 @@ The repository is organized to reflect a typical production-style data engineeri
 
 food-delivery-analytics-platform/
 
+```text
+
 ├── airflow/                     # Pipeline orchestration
 │   ├── dags/
 │   │   └── food_delivery_pipeline.py
@@ -91,6 +93,8 @@ food-delivery-analytics-platform/
 │
 ├── README.md
 └── requirements.txt
+
+```
 
 ##  Architecture Overview
 
