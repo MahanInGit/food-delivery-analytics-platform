@@ -182,6 +182,7 @@ This ensures the pipeline is reliable and production-ready.
 <p align="left">
   <img src="docs/architecture_bigquery.png" width="150">
 </p>
+
 ### Aggregated Analytics table
 
 Example query:
