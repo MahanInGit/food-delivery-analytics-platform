@@ -1,5 +1,17 @@
-airflow/keys/
-airflow/logs/
-airflow/.env
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# dbt local profiles / secrets
+dbt/profiles/user.yml
 service_account.json
 
+# logs
+logs/
