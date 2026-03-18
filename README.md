@@ -179,8 +179,9 @@ This ensures the pipeline is reliable and production-ready.
 
 ### BigQuery Warehouse Structure
 
-![Warehouse](docs/architecture_bigquery.png)
-
+<p align="center">
+  <img src="docs/architecture_bigquery.png" width="500">
+</p>
 ### Aggregated Analytics table
 
 Example query:
